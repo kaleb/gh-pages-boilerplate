@@ -15,13 +15,13 @@
     {% endif %}
     {% if page.categories and page.categories[0] %}
     in
-    <nav class="categories">
+    <span class="categories">
       {% for category in page.categories %}
       {% capture previous_category %}{{ previous_category }}/{{ category }}{% endcapture %}
       {% unless forloop.first %}:{% endunless %}
       <a href="{{ site.url }}{{ previous_category }}" rel="tag">{{ category }}</a>
       {% endfor %}
-    </nav>
+    </span>
     {% endif %}
   </header>
   {% if content %}{{ content }}{% else %}{{ page.content }}{% endif %}
