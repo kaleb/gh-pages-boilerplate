@@ -27,16 +27,12 @@
   {% endcomment %}
   <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
   <link rel="apple-touch-icon" href="{{ site.url }}/apple-touch-icon.png">
+  <link rel="alternate" type="application/atom+xml" title="Recent blog posts"
+    href="{{ site.url }}/atom.xml">
   {% comment %}
     Universal edit button, http://universaleditbutton.org, should point to the github edit page.
   {% endcomment %}
-  <link rel="alternate" type="application/atom+xml" title="Recent blog posts"
-    href="{{ site.url }}/atom.xml">
-  {% if page.path %}
-  <link rel="alternate" type="application/x-wiki" title="Edit this page on Github." href="https://github.com/{{ site.author.gh.user }}/{{ site.author.gh.repo }}/file-edit/{% if site.author.gh.repo contains '.github.com' %}master{% else %}gh-pages{% endif %}{{ page.path }}">
-  {% elsif page.url %}
-  <link rel="alternate" type="application/x-wiki" title="Edit this page on Github." href="https://github.com/{{ site.author.gh.user }}/{{ site.author.gh.repo }}/file-edit/{% if site.author.gh.repo contains '.github.com' %}master{% else %}gh-pages{% endif %}{{ page.url }}">
-  {% endif %}
+  <link rel="alternate" type="application/x-wiki" title="Edit this page on Github." href="https://github.com/{{ site.author.gh.user }}/{{ site.author.gh.repo }}/file-edit/{% if site.author.gh.repo contains '.github.com' %}master{% else %}gh-pages{% endif %}{% if page.path %}{{ page.path }}{% else %}{{ page.url }}{% endif %}">
   {% comment %}CSS: implied media="all"{% endcomment %}
   <link rel="stylesheet" href="{{ site.url }}/css/style.css">
   {% comment %}
