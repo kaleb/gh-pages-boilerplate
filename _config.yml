@@ -41,14 +41,7 @@ paginate:    5
 ga: XXXXX-X
 
 ## A list of directories and files to exclude from the conversion
-exclude: 
-- apple-touch-icon-114x114-precomposed.png
-- apple-touch-icon-72x72-precomposed.png
-- apple-touch-icon-precomposed.png
-- apple-touch-icon-57x57-precomposed.png
-- apple-touch-icon.png
-- favicon.ico
-- js
+exclude: [ ]
 
 #################
 # Jekyll Defaults
