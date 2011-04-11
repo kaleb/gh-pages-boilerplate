@@ -6,3 +6,6 @@
 	height: 22px;
 	width: 22px;
 }
+.post header nav {
+	display: inline;
+}
