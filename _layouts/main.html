@@ -33,7 +33,9 @@
   <link rel="alternate" type="application/atom+xml" title="Recent blog posts"
     href="{{ site.url }}/atom.xml">
   {% if page.path %}
-  <link rel="alternate" type="application/x-wiki" title="Edit this page on Github." href="https://github.com/{{ site.author.gh }}/{{ site.author.gh }}.github.com/file-edit/master{% if page.path %}{{ page.path }}{% else %}{{ page.url }}{% endif %}"> 
+  <link rel="alternate" type="application/x-wiki" title="Edit this page on Github." href="https://github.com/{{ site.author.gh }}/{{ site.author.gh }}.github.com/file-edit/master{{ page.path }}">
+  {% elsif page.url %}
+  <link rel="alternate" type="application/x-wiki" title="Edit this page on Github." href="https://github.com/{{ site.author.gh }}/{{ site.author.gh }}.github.com/file-edit/master{{ page.url }}">
   {% endif %}
   {% comment %}CSS: implied media="all"{% endcomment %}
   <link rel="stylesheet" href="{{ site.url }}/css/style.css">
