@@ -3,6 +3,7 @@ layout: main
 ---
 <section id="main" class="post">
   {% include post.html %}
+  {{ content }}
   <h1 id="related_posts">Related Posts</h1>
   <ol>
   {% for post in site.related_posts %}
