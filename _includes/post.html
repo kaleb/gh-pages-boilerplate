@@ -1,5 +1,5 @@
   <header>
-    <h1>{{ page.title }}</h1>
+    <h1><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></h1>
     {% if page.date %}
     <time pubdate="pubdate" datetime="{{ page.date | date_to_xmlschema }}">
       {{ page.date | date_to_long_string }}
