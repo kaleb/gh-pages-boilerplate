@@ -6,7 +6,7 @@ layout: main
   <h1 id="related_posts">Related Posts</h1>
   <ol>
   {% for post in site.related_posts %}
-    <li><a href="{{ site.url }}{{ post.url }}"{{ post.title }}</a></li>
+    <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
   </ol>
 </section>
