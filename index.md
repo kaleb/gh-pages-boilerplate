@@ -16,8 +16,10 @@ Instructions
 Blog Posts and Changes
 ======================
 
+{{ paginator }}
+
 {% for post in paginator.posts %}
-- [post.title](post.url)
+- [{{post.title}}]({{post.url}})
 {% endfor %}
 
 [ghp]: http://pages.github.com
