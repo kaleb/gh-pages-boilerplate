@@ -13,10 +13,12 @@ Octocat icon from <a href="http://designmoo.com/3466/github-icons/">designmoo</a
  <li>edit <code>_includes/style.css</code>
 </ol>
 <hr>
+<section>
 <h2>Web Log</h2>
 {% for page in paginator.posts %}
 {% include post.html %}
 {% endfor %}
+</section>
 <footer class="pagination">
 {% if paginator.previous_page == 1 %}
   <a href="{{ site.url }}/blog" rel="prev start" class="previous">Newer</a>
