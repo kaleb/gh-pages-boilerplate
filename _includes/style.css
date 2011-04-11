@@ -2,3 +2,7 @@
 #site_header nav li {
 	display: inline;
 }
+#site_header nav img {
+	height: 22px;
+	width: 22px;
+}
