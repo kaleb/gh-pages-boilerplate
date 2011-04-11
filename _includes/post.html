@@ -24,7 +24,7 @@
     </nav>
     {% endif %}
   </header>
-  {{ content }}
+  {% if content %}{{ content }}{% else %}{{ page.content }}{% endif %}
   {% if site.related_posts %}
   <h1 id="related_posts">Related Posts</h1>
   <ol>
