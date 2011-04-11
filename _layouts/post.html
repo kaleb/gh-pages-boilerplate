@@ -1,0 +1,35 @@
+---
+layout: main
+---
+<section id="main" class="post">
+  <header>
+    <h1>{{ page.title }}</h1>
+    {% if page.date %}
+    <time pubdate="pubdate" datetime="{{ page.date | date_to_xmlschema }}">
+      {{ page.date | date_to_long_string }}
+    </time>
+    {% endif %}
+    {% if page.author %}
+    by
+    {% if page.author_url %}
+    <a href="{{ page.author_url }}" rel="author" class="author">{{ page.author }}</a>
+    {% else %}
+    <span class="author">{{ page.author }}</span>
+    {% endif %}
+    {% endif %}
+    {% if page.categories and page.categories[0] %}
+    in
+    <nav class="categories">
+      {% for category in page.categories %}
+      {% capture previous_category %}{{ previous_category }}/{{ category }}{% endcapture %}
+      {% unless forloop.first %}:{% endunless %}
+      <a href="{{ site.url }}{{ previous_category }}" rel="tag">{{ category }}</a>
+      {% endfor %}
+    </nav>
+    {% endif %}
+  </header>
+  <section>
+  {{ content }}
+  <h1 id="related_posts">Related Posts</h1>
+  </section>
+</section>
