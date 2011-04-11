@@ -17,7 +17,9 @@ author:
   ## Author's location
   location:  "Augusta, GA, US"
   ## Author's github user name
-  gh:        kaleb
+  gh:
+    user:    kaleb
+    repo:    gh-pages-boilerplate
   ## Author's twitter name
   twitter:   thekaleb
 
