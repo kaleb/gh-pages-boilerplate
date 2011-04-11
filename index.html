@@ -3,19 +3,20 @@ layout: default
 title: Github Pages HTML5 Boilerplate
 ---
 
-This is a boilerplate for use in [Github Pages][ghp]. Octocat icon from
-http://designmoo.com/3466/github-icons/ .
+This is a boilerplate for use in <a href="http://pages.github.com/">Github Pages</a>.
+Octocat icon from <a href="http://designmoo.com/3466/github-icons/">designmoo</a>.
 
 <h1>Instructions</h1>
-
- 1. edit `_config.yml`
- 2. edit `index.html`
- 3. edit `_includes/style.css`
-
+<ol>
+ <li>edit <code>_config.yml</code>
+ <li>edit <code>index.html</code>
+ <li>edit <code>_includes/style.css</code>
+</ol>
 <h1>Blog Posts and Changes</h1>
 
+<ul>
 {% for post in paginator.posts %}
-- [{{post.title}}]({{post.url}})
+  <li><a href="{{post.url}}">{{post.title}}</a>
 {% endfor %}
-
+</ul>
 [ghp]: http://pages.github.com
