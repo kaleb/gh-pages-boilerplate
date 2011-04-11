@@ -16,7 +16,7 @@ Instructions
 Blog Posts and Changes
 ======================
 
-{% for post in paginator.posts $}
+{% for post in paginator.posts %}
 - [post.title](post.url)
 {% endfor %}
 

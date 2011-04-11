@@ -14,7 +14,38 @@
   {% endcomment %}
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>{{page.title}} - {{site.title}}</title>
+  <meta name="description" content="{%if page.description%}{{page.description}}{%else%}{{site.description}}{%endif%}">
+  <meta name="keywords" content="{%if page.categories%}{{page.categories|join:','}}{%else%}{{site.keywords|join:','}}{%endif%}">
+  <meta name="author" content="{%if page.author%}{{page.author}}{%else%}{{site.author.name}}{%endif%}">
+  {% comment %}
+    Mobile viewport optimized: http://j.mp/bplateviewport
+  {% endcomment %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% comment %}
+    Place favicon.ico & apple-touch-icon.png in the root of your domain and
+    delete these references
+  {% endcomment %}
+  <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+  <link rel="apple-touch-icon" href="{{ site.url }}/apple-touch-icon.png">
+  {% comment %}
+    Universal edit button, http://universaleditbutton.org, should point to the github edit page.
+  {% endcomment %}
+  <link rel="alternate" type="application/atom+xml" title="Recent blog posts"
+    href="{{ site.url }}/atom.xml">
+  {% if page.path %}
+  <link rel="alternate" type="application/x-wiki" title="Edit this page on Github." href="https://github.com/{{ site.author.gh }}/{{ site.author.gh }}.github.com/file-edit/master{% if page.path %}{{ page.path }}{% else %}{{ page.url }}{% endif %}"> 
+  {% endif %}
+  {% comment %}CSS: implied media="all"{% endcomment %}
   <link rel="stylesheet" href="{{ site.url }}/css/style.css">
+  {% comment %}
+    Uncomment if you are specifically targeting less enabled mobile browsers
+  <link rel="stylesheet" media="handheld" href="{{ site.url }}/css/handheld.css">
+  {% endcomment %}
+  {% comment %}
+    All JavaScript at the bottom, except for Modernizr which enables HTML5
+    elements & feature detects
+  {% endcomment %}
+  <script src="{{ site.url }}/js/libs/modernizr-1.7.min.js"></script>
 </head>
 <body>
   <div id="container">
