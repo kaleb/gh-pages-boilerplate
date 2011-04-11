@@ -3,6 +3,6 @@ title: Changes
 layout: default
 ---
 
-<pre>
-{{ site.categories.changes }}
-</pre>
+{% for page in site.categories.changes %}
+{% include post.html %}
+{% endfor %}
