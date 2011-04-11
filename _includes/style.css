@@ -6,6 +6,6 @@
 	height: 22px;
 	width: 22px;
 }
-.post header nav ol {
+.post header nav ol, .post header nav {
 	display: inline;
 }
