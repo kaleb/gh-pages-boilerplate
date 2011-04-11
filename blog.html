@@ -2,7 +2,9 @@
 layout: default
 title: Blog Posts
 ---
-
+<pre>
+{{ paginator.posts }}
+</pre>
 {% for post in paginator.posts %}
 {% include post.html %}
 {% endfor %}
