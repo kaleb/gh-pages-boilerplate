@@ -33,9 +33,9 @@
   <link rel="alternate" type="application/atom+xml" title="Recent blog posts"
     href="{{ site.url }}/atom.xml">
   {% if page.path %}
-  <link rel="alternate" type="application/x-wiki" title="Edit this page on Github." href="https://github.com/{{ site.author.gh }}/{{ site.author.gh }}.github.com/file-edit/master{{ page.path }}">
+  <link rel="alternate" type="application/x-wiki" title="Edit this page on Github." href="https://github.com/{{ site.author.gh.user }}/{{ site.author.gh.repo }}/file-edit/master{{ page.path }}">
   {% elsif page.url %}
-  <link rel="alternate" type="application/x-wiki" title="Edit this page on Github." href="https://github.com/{{ site.author.gh }}/{{ site.author.gh }}.github.com/file-edit/master{{ page.url }}">
+  <link rel="alternate" type="application/x-wiki" title="Edit this page on Github." href="https://github.com/{{ site.author.gh.user }}/{{ site.author.gh.repo }}/file-edit/master{{ page.url }}">
   {% endif %}
   {% comment %}CSS: implied media="all"{% endcomment %}
   <link rel="stylesheet" href="{{ site.url }}/css/style.css">
@@ -63,7 +63,7 @@
             <a href="http://www.twitter.com/{{ site.author.twitter }}"><img src="http://twitter-badges.s3.amazonaws.com/t_small-b.png" alt="Follow {{ site.author.twitter }} on Twitter" /></a>
           </li>
           <li>
-            <a href="https://github.com/{{ site.author.gh }}"><img src="{{ site.url }}/img/github_white_black_cat_32.png" alt="Fork {{ site.author.gh }} on Github" /></a>
+            <a href="https://github.com/{{ site.author.gh.user }}"><img src="{{ site.url }}/img/github_white_black_cat_32.png" alt="Fork {{ site.author.gh.user }} on Github" /></a>
           </li>
           <li><a href="{{ site.url }}/atom.xml">Feed</a></li>
         </ul>
