@@ -1,1 +1,4 @@
 /* This is where all custom styles go.*/
+#site_header nav li {
+	display: inline;
+}
