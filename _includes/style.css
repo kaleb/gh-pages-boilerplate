@@ -1,11 +1,11 @@
 /* This is where all custom styles go.*/
-#site_header li {
+#site_header li, .post header li, .post header nav ul {
 	display: inline;
+	margin: 0;
+	list-style:none;
+	list-style-image: none;
 }
-#site_header nav img {
+#site_header ul img {
 	height: 22px;
 	width: 22px;
-}
-.post header li, .post header nav, .post header nav ul {
-	display: inline;
 }
