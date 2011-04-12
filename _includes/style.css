@@ -1,10 +1,10 @@
 /* This is where all custom styles go.*/
 {% include text.css %}
 #site_header hgroup, #site_footer {
-	background: #777;
+	background: #AAA;
 }
 #site_header, footer.pagination {
-	background: #AAA;
+	background: #CCC;
 }
 #site_header h1, #site_header h2 {
 	display: inline;
