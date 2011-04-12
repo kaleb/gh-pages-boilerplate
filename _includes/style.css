@@ -20,3 +20,6 @@
 	width: 22px;
 	vertical-align: middle;
 }
+section, article {
+	margin-left: 1em;
+}
