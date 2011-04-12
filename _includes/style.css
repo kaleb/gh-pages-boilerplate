@@ -1,6 +1,6 @@
 /* This is where all custom styles go.*/
 {% include text.css %}
-#site_header header, #site_footer {
+#site_header hgroup, #site_footer {
 	background: #777;
 }
 #site_header, footer.pagination {
