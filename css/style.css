@@ -2,8 +2,8 @@
 layout: nil
 ---
 {% comment %}
-  This file can be mostly untouched. For most styles, edi _includes/style.css
-{% comment %}
+  This file can be mostly untouched. For most styles, edit `_includes/style.css`
+{% endcomment %}
 {% comment %}
 /**
  * HTML5 ✰ Boilerplate
