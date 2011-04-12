@@ -20,8 +20,11 @@
 	width: 22px;
 	vertical-align: middle;
 }
+section, article {
+	margin-left: 1em;
+}
 footer.pagination {
-	margin-left: 0px;
+	margin-left: -1em;
 	text-align: center;
 }
 footer.pagination .previous {
@@ -29,7 +32,4 @@ footer.pagination .previous {
 }
 footer.pagination .next {
 	float: right;
-}
-section, article {
-	margin-left: 1em;
 }
