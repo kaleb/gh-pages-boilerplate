@@ -23,8 +23,10 @@
 section, article {
 	margin-left: 1em;
 }
+section#main {
+	margin-left: 0;
+}
 footer.pagination {
-	margin-left: -1em;
 	text-align: center;
 }
 footer.pagination .previous {
