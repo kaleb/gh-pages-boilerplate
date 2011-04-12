@@ -20,11 +20,8 @@
 	width: 22px;
 	vertical-align: middle;
 }
-section, article {
+article {
 	margin-left: 1em;
-}
-section#main {
-	margin-left: 0;
 }
 footer.pagination {
 	text-align: center;
