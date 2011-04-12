@@ -20,6 +20,16 @@
 	width: 22px;
 	vertical-align: middle;
 }
+footer.pagination {
+	margin-left: 0px;
+	text-align: center;
+}
+footer.pagination .previous {
+	float: left;
+}
+footer.pagination .next {
+	float: right;
+}
 section, article {
 	margin-left: 1em;
 }
