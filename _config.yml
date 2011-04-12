@@ -30,13 +30,13 @@ author:
 url:         http://git.kaleb.hornsby.ws/gh-pages-boilerplate
 
 ## The name of the site, <title> and <h1> in _layouts/default.html
-title:       My Site
+title:       GitHub Pages Boilerplate
 
 ## <meta name=description> and <h2> in /_layouts/default.html
-description: "A website. It's awesome."
+description: Simplifying pages setup.
 
 ## <meta name=keywords> in  /_layouts/default.html, probably not useful anymore.
-keywords:    [computer, software ]
+keywords:    [ GitHub, HTML5, CSS3 ]
 
 ## Splits your posts up over multiple subdirectories called “page2”, “page3”, … “pageN”
 paginate:    5
