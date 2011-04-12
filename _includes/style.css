@@ -1,5 +1,11 @@
 /* This is where all custom styles go.*/
 {% include text.css %}
+#site_header, #site_footer {
+	background: #777;
+}
+#site_header ul, footer.pagination {
+	background: #AAA;
+}
 #site_header h1, #site_header h2 {
 	display: inline;
 }
