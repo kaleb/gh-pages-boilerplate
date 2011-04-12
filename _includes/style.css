@@ -1,4 +1,7 @@
 /* This is where all custom styles go.*/
+#site_header h1, site_header h2 {
+	display: inline;
+}
 #site_header li, #site_header ul, .post header li, .post header nav ul {
 	display: inline;
 	margin: 0;
