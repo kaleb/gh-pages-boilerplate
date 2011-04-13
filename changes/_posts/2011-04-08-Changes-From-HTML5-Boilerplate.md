@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Changes From HTML5 BoilerPlate
 ---
 
     mkdir _layouts _posts _includes
