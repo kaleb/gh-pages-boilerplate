@@ -41,3 +41,6 @@ footer.pagination .next {
 	margin-bottom: 20px;
 	font-style: oblique;
 }
+.float-right {
+	float: right;
+}
