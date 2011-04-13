@@ -70,10 +70,9 @@
     </section>
     <footer id="site_footer" class="clearfix">
       <small>&copy; {{ site.time | date: "%Y" }}, {{ site.author.name }}</small>
-<a href="http://www.w3.org/html/logo/">
-<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="83" height="32" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
-</a>
-    </footer>
+<a href="http://www.w3.org/html/logo/" title="HTML5 Powered"><img src="http://www.w3.org/html/logo/downloads/HTML5_Badge_32.png" width="22" height="22" alt="HTML5 Powered"></a>
+<a href="http://validator.w3.org/check?uri={{ site.url }}{{ page.url }}" title="HTML 5 Semantics"><img src="http://www.w3.org/html/logo/img/tiny-semantics.png" width="22" height="22" alt="HTML5 Semantics"></a>
+<a href="http://validator.w3.org/check?uri={{ site.url }}{{ page.url }}" title="CSS 3"><img src="http://www.w3.org/html/logo/img/tiny-css3.png" width="22" height="22" alt="CSS3"></a>    </footer>
   </div>
   {% comment %}
     JavaScript at the bottom for fast page loading
