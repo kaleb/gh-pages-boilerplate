@@ -15,7 +15,7 @@
 	list-style:none;
 	list-style-image: none;
 }
-#site_header ul img, #site_footer {
+#site_header ul img, #site_footer img {
 	vertical-align: middle;
 }
 article {
