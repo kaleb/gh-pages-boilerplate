@@ -18,6 +18,9 @@
 #site_header ul img, #site_footer img {
 	vertical-align: middle;
 }
+#site_footer img {
+	float: right;
+}
 article {
 	margin-left: 1em;
 }
