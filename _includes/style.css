@@ -1,5 +1,8 @@
 /* This is where all custom styles go.*/
 {% include text.css %}
+#main {
+	background: white;
+}
 #site_header hgroup, #site_footer, body {
 	background: #AAA;
 }
