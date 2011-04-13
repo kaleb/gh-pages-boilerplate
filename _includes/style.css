@@ -21,6 +21,9 @@
 #site_footer img {
 	float: right;
 }
+#site_footer small {
+	float: left;
+}
 article {
 	margin-left: 1em;
 }
