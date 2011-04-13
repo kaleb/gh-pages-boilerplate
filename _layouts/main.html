@@ -33,7 +33,7 @@
   {% comment %}
     Universal edit button, http://universaleditbutton.org, should point to the github edit page.
   {% endcomment %}
-  <link rel="alternate" type="application/x-wiki" title="Edit this page on Github." href="https://github.com/{{ site.author.gh.user }}/{{ site.author.gh.repo }}/file-edit/{% if site.author.gh.repo contains '.github.com' %}master{% else %}gh-pages{% endif %}{% if page.path %}{{ page.path }}{% else %}{{ page.url }}{% endif %}">
+  <link rel="alternate" type="application/x-wiki" title="Edit this page on Github." href="{% include edit.url %}">
   {% comment %}CSS: implied media="all"{% endcomment %}
   <link rel="stylesheet" href="{{ site.url }}/css/style.css">
   {% comment %}
@@ -63,6 +63,7 @@
             <a href="https://github.com/{{ site.author.gh.user }}"><img src="{{ site.url }}/img/github_white_black_cat_32.png" alt="Fork {{ site.author.gh.user }} on Github" width="22" height="22"></a>
           </li>
           <li><a href="{{ site.url }}/atom.xml"><img src="https://d3nwyuy0nl342s.cloudfront.net/images/icons/feed.png" alt="Atom Feed" height="14" width="14"></a></li>
+          <li><a href="{% include edit.url %}" title="Edit this page on GitHub"><img src="http://universaleditbutton.org/images/4/4e/UEB16.png" alt="Edit"></a></li>
         </ul>
     </header>
     <section id="main">

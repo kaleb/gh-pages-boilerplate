@@ -1,0 +1,2 @@
+
+https://github.com/{{ site.author.gh.user }}/{{ site.author.gh.repo }}/file-edit/{% if site.author.gh.repo contains '.github.com' %}master{% else %}gh-pages{% endif %}{% if page.path %}{{ page.path }}{% else %}{{ page.url }}{% endif %}
