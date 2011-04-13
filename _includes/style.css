@@ -22,7 +22,7 @@
 	float: right;
 }
 #site_footer small {
-	float: left;
+	line-height: 32px;
 }
 article {
 	margin-left: 1em;
