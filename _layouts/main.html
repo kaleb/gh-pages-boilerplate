@@ -56,11 +56,13 @@
         <ul>
           <li><a href="{{ site.url }}/about">About</a></li>
           <li><a href="{{ site.url }}/wiki">Wiki</a></li>
+</ul>
+<ul class="float-right">
           <li>
-            <a href="http://www.twitter.com/{{ site.author.twitter }}" class="float-right"><img src="http://twitter-badges.s3.amazonaws.com/t_small-b.png" alt="Follow {{ site.author.twitter }} on Twitter" width="22" height="22"></a>
+            <a href="http://www.twitter.com/{{ site.author.twitter }}"><img src="http://twitter-badges.s3.amazonaws.com/t_small-b.png" alt="Follow {{ site.author.twitter }} on Twitter" width="22" height="22"></a>
           </li>
           <li>
-            <a href="https://github.com/{{ site.author.gh.user }}" class="float-right"><img src="{{ site.url }}/img/github_white_black_cat_32.png" alt="Fork {{ site.author.gh.user }} on Github" width="22" height="22"></a>
+            <a href="https://github.com/{{ site.author.gh.user }}"><img src="{{ site.url }}/img/github_white_black_cat_32.png" alt="Fork {{ site.author.gh.user }} on Github" width="22" height="22"></a>
           </li>
           <li><a href="{{ site.url }}/atom.xml"><img src="https://d3nwyuy0nl342s.cloudfront.net/images/icons/feed.png" alt="Atom Feed" height="14" width="14"></a></li>
           <li><a href="{% include edit.url %}" title="Edit this page on GitHub"><img src="http://universaleditbutton.org/images/4/4e/UEB16.png" alt="Edit"></a></li>
