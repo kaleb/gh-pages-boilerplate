@@ -1,4 +1,5 @@
 ---
+path: /changes/_posts/2011-04-08-Changes-From-HTML5-Boilerplate.md  
 layout: post
 ---
 
