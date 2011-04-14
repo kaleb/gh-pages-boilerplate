@@ -5,7 +5,7 @@
 {% comment %}
 The following is a hack that fixes an issue when the last element insid #main is a <p>. I am not sure why this hack works.
 {% endcomment %}
-	/*padding-bottom: 1px;*/
+	padding-bottom: 0.5px;
 }
 #site_header hgroup, #site_footer, body {
 	background: #AAA;
