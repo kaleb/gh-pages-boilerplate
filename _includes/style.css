@@ -51,3 +51,6 @@ footer.pagination .next {
 .float-right {
 	float: right;
 }
+.js #wiki-warning, .no-js #wiki-content {
+	display:none;
+}
