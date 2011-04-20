@@ -48,32 +48,11 @@
 </head>
 <body>
   <div id="container">
-    <header id="site_header">
-      <hgroup>
-        <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
-        <h2>{{ site.description }}</h2>
-      </hgroup>
-        <ul>
-          <li><a href="{{ site.url }}/about">About</a></li>
-          <li><a href="{{ site.url }}/wiki">Wiki</a></li>
-          <li>
-            <a href="http://www.twitter.com/{{ site.author.twitter }}"><img src="http://twitter-badges.s3.amazonaws.com/t_small-b.png" alt="Follow {{ site.author.twitter }} on Twitter" width="22" height="22"></a>
-          </li>
-          <li>
-            <a href="https://github.com/{{ site.author.gh.user }}"><img src="{{ site.url }}/img/github_white_black_cat_32.png" alt="Fork {{ site.author.gh.user }} on Github" width="22" height="22"></a>
-          </li>
-          <li><a href="{{ site.url }}/atom.xml" class="float-right"><img src="https://d3nwyuy0nl342s.cloudfront.net/images/icons/feed.png" alt="Atom Feed" height="14" width="14"></a></li>
-          <li><a href="{% include edit.url %}" title="Edit this page on GitHub" class="float-right"><img src="http://universaleditbutton.org/images/4/4e/UEB16.png" alt="Edit"></a></li>
-        </ul>
-    </header>
+    <header id="site_header">{% include site-header %}</header>
     <section id="main">
     {{ content }}
     </section>
-    <footer id="site_footer" class="clearfix">
-      <small>&copy; {{ site.time | date: "%Y" }}, {{ site.author.name }}</small>
-<a href="http://validator.w3.org/check?uri={{ site.url }}{{ page.url }}" title="HTML5 Powered"><img src="http://www.w3.org/html/logo/downloads/HTML5_Badge_32.png" width="22" height="22" alt="HTML5 Powered"></a>
-<a href="http://gsnedders.html5.org/outliner/process.py?url={{ site.url }}{{ page.url }}" title="HTML 5 Semantics"><img src="http://www.w3.org/html/logo/img/tiny-semantics.png" width="22" height="22" alt="HTML5 Semantics"></a>
-<a href="http://jigsaw.w3.org/css-validator/validator?uri={{ site.url }}{{ page.url }}" title="CSS 3"><img src="http://www.w3.org/html/logo/img/tiny-css3.png" width="22" height="22" alt="CSS3"></a>    </footer>
+    <footer id="site_footer" class="clearfix">{% include site-footer %}</footer>
   </div>
   {% comment %}
     JavaScript at the bottom for fast page loading
