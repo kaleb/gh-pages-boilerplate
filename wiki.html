@@ -2,7 +2,8 @@
 layout: default
 title: Wiki
 ---
-<script id="wiki-content" src="https://github.com/kaleb/gh-pages-boilerplate/wiki/Home.md" type="text/markdown" style="display:block !important;border:1px solid red;"></script>
+<script id="wiki-src" src="https://github.com/kaleb/gh-pages-boilerplate/wiki/Home.md" type="text/markdown"></script>
+<div id="wiki-content">
 The wiki is loading.
 </div>
 <div id="wiki-warning">
@@ -10,3 +11,9 @@ It looks like you don't have JavaScript enabled. You can view the
 <a href="https://github.com/{{ site.author.gh.user }}/{{ site.author.gh.repo }}/wiki">
 {{ site.title }} wiki on GitHub</a> instead.
 </div>
+<script>
+(function init(){
+if (!window.jQuery) return setTimeout(init, 250);
+alert($.jQuery);
+})();
+</script>
