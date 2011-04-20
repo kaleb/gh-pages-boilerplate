@@ -12,7 +12,7 @@ function attachWiki(data, textStatus, jqXHR){
 };
 window.wikiRequest = function(wikiTitle) {
     var url = [defaultUrl,wikiTitle,wikiExtension].join('');
-    $.get(request, {}, attachWiki);
+    $.get(url, {}, attachWiki);
 };
 wikiRequest('Home');
 })();
