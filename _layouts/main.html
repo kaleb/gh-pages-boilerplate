@@ -48,11 +48,11 @@
 </head>
 <body>
   <div id="container">
-    <header id="site_header">{% include site-header %}</header>
+    <header id="site_header">{% include site-header.html %}</header>
     <section id="main">
     {{ content }}
     </section>
-    <footer id="site_footer" class="clearfix">{% include site-footer %}</footer>
+    <footer id="site_footer" class="clearfix">{% include site-footer.html %}</footer>
   </div>
   {% comment %}
     JavaScript at the bottom for fast page loading
