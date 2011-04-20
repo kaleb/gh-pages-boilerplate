@@ -1,5 +1,5 @@
 ;(function init() {
-if(!jQuery) {
+if(!window.jQuery) {
     setTimeout(init, 250);
     return;
 }
