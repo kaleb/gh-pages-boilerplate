@@ -53,6 +53,7 @@ layout: nil
   <div id="container">
     <header id="site_header">{% include site-header.html %}</header>
     <section id="main">
+<h1 id="wiki-title">Wiki</h1>
 <div id="wiki-content">Loading...</div>
 <div id="wiki-warning">
 It looks like you don't have JavaScript enabled. You can view the
@@ -101,6 +102,7 @@ function wikify(userName, repoName, pageName, extension) {
     console.log(url);
     $.getJSON(url, function(data, textStatus, jqXHR) {
         $('#wiki-content').html(converter.makeHtml(escapeWikiAnchors(data.query.results.resources.content)));
+        $('#wiki-title').text(pageName);
     });
 }
 
