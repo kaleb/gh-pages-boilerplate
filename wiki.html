@@ -112,8 +112,10 @@ function wikify(userName, repoName, pageName, extension) {
             content = converter.makeHtml(escapeWikiAnchors(data.query.results.resources.content));
             $('#edit-link').attr('href', wikiUrl + '/_edit');
         }
-        $('#wiki-content').html(content);
-        $('#wiki-title').text(pageName);
+        content = $('#wiki-content').html(content);
+        if (content.find('h1').length < 1) {
+            $('#wiki-title').text(pageName.replace('-',' ');
+        }
     });
 }
 
