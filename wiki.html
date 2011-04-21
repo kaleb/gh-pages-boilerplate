@@ -96,7 +96,7 @@ var converter = new Showdown.converter();
 
 function wikify(userName, repoName, pageName, extension) {
     var pageName = pageName || 'Home',
-        wikiUrl = ['https://github.com/', userName, '/', repoName, '/wiki/', pageName].join(),
+        wikiUrl = ['https://github.com/', userName, '/', repoName, '/wiki/', pageName].join(''),
         url = [
         "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20data.headers%20where%20url%3D%22",
         wikiUrl, ".", extension,
