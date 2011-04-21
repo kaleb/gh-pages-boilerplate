@@ -53,8 +53,10 @@ layout: nil
   <div id="container">
     <header id="site_header">{% include site-header.html %}</header>
     <section id="main">
-<h1 id="wiki-title">Wiki</h1>
-<div id="wiki-content">Loading...</div>
+<div id="wiki-content">
+<h1>Wiki</h1>
+Loading...
+</div>
 <div id="wiki-warning">
 It looks like you don't have JavaScript enabled. You can view the
 <a href="https://github.com/{{ site.author.gh.user }}/{{ site.author.gh.repo }}/wiki">
@@ -114,7 +116,7 @@ function wikify(userName, repoName, pageName, extension) {
         }
         content = $('#wiki-content').html(content);
         if (content.find('h1').length < 1) {
-            $('#wiki-title').text(pageName.replace('-',' ');
+            content.prepend('<h1>' + pageName.replace('-',' ') + '</h1>');
         }
     });
 }
