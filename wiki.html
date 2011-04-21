@@ -108,9 +108,10 @@ function wikify(userName, repoName, pageName, extension) {
             content = "This is a non-existent page";
             pageName = "Not Found";
         } else {
+            content = converter.makeHtml(escapeWikiAnchors(data.query.results.resources.content));
             $('#edit-link').attr('href', wikiUrl + '/_edit');
         }
-        $('#wiki-content').html(converter.makeHtml(escapeWikiAnchors(data.query.results.resources.content)));
+        $('#wiki-content').html(content);
         $('#wiki-title').text(pageName);
     });
 }
