@@ -96,14 +96,16 @@ var converter = new Showdown.converter();
 
 function wikify(userName, repoName, pageName, extension) {
     var pageName = pageName || 'Home',
+        wikiUrl = ['https://github.com/', userName, '/', repoName, '/wiki/', pageName].join(),
         url = [
         "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20data.headers%20where%20url%3D%22",
-        "https://github.com/", userName, "/", repoName, "/wiki/", pageName, ".", extension,
+        wikiUrl, ".", extension,
         "%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=?"].join('');
     console.log(url);
     $.getJSON(url, function(data, textStatus, jqXHR) {
         $('#wiki-content').html(converter.makeHtml(escapeWikiAnchors(data.query.results.resources.content)));
         $('#wiki-title').text(pageName);
+        $('#edit-link').attr('href', wikiUrl + '/_edit');
     });
 }
 
