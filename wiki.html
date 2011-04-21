@@ -105,9 +105,9 @@ function wikify(userName, repoName, pageName, extension) {
     $.getJSON(url, function(data, textStatus, jqXHR) {
         var content;
         if (data.query.results.resources.redirect) {
+            $('#edit-link').attr('href', wikiUrl + '_new?wiki[name]=' + pageName);
             content = "This is a non-existent page";
             pageName = "Not Found";
-            $('#edit-link').attr('href', wikiUrl + '_new?wiki[name]=' + pageName);
         } else {
             content = converter.makeHtml(escapeWikiAnchors(data.query.results.resources.content));
             $('#edit-link').attr('href', wikiUrl + '/_edit');
