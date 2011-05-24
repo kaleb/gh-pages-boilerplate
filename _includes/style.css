@@ -1,5 +1,4 @@
 /* This is where all custom styles go.*/
-@import url(http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/smoothness/jquery-ui.css);
 {% include text.css %}
 #main {
 	background: white;
