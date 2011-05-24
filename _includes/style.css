@@ -26,7 +26,7 @@ The following is a hack that fixes an issue when the last element insid #main is
 	vertical-align: middle;
 }
 #site_header a.ui-icon {
-	display: inline;
+	display: inline-block;
 }
 #site_footer img {
 	float: right;
