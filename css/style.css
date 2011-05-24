@@ -1,6 +1,7 @@
 ---
 layout: nil
 ---
+@import url(http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/smoothness/jquery-ui.css);
 {% comment %}
   This file can be mostly untouched. For most styles, edit `_includes/style.css`
 {% endcomment %}
