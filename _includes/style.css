@@ -57,3 +57,6 @@ footer.pagination .next {
 .js #wiki-warning, .no-js #wiki-content {
 	display:none;
 }
+.ui-icon-tweet {
+	url(http://si0.twimg.com/images/dev/cms/intents/bird/bird_gray/bird_16_gray.png)
+}
