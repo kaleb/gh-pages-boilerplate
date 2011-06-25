@@ -68,18 +68,10 @@
     scripts concatenated and minified via ant build script
   {% endcomment %}
   <script src="{{ site.url }}/js/plugins.js"></script>
-  <script src="{{ site.url }}/js/script.js"></script>
+  <script src="{{ site.url }}/js/script.js?v=1"></script>
   {% comment %}end scripts{% endcomment %}
   {% comment %}
     Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb
-  {% endcomment %}
-  <!--[if lt IE 7 ]>
-    <script src="{{ site.url }}/js/libs/dd_belatedpng.js"></script>
-    <script>DD_belatedPNG.fix("img, .png_bg");</script>
-  <![endif]-->
-  {% comment %}
-    mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your
-    site's ID
   {% endcomment %}
   <script>
     var _gaq=[["_setAccount","UA-{{ site.ga }}"],["_trackPageview"]];
