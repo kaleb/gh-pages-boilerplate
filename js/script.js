@@ -3,8 +3,9 @@
 */
 $(function(){
   $('#site_header a').each(function(){
-    $(this).button({
-      icons: { primary: $(this).attr('data-icon') }
+    var $this = $(this);
+    $this.button({
+      icons: { primary: $this.attr('data-icon') }
     , text: false
     });
   });
