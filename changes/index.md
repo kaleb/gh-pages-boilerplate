@@ -1,7 +1,7 @@
 ---
-path: /changes/index.html  
-layout: default  
-title: Changes  
+    path:   /changes/index.md 
+    layout: default  
+    title:  Changes  
 ---
 
 This page lists all posts with the category of _changes_.
