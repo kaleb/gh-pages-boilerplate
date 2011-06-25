@@ -10,7 +10,6 @@
   <meta charset="utf-8">
   {% comment %}
     Always force latest IE rendering engine (even in intranet) & Chrome Frame
-    Remove this if you use the .htaccess
   {% endcomment %}
   <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
   <title>{{page.title}} - {{site.title}}</title>
@@ -28,8 +27,7 @@
   <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
   <link rel="apple-touch-icon" href="{{ site.url }}/apple-touch-icon.png">
   <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/apple-touch-icon.png">
-  <link rel="alternate" type="application/atom+xml" title="Recent blog posts"
-    href="{{ site.url }}/atom.xml">
+  <link rel="alternate" type="application/atom+xml" title="Recent blog posts" href="{{ site.url }}/atom.xml">
   {% comment %}
     Universal edit button, http://universaleditbutton.org, should point to the github edit page.
   {% endcomment %}
@@ -44,7 +42,7 @@
     All JavaScript at the bottom, except for Modernizr which enables HTML5
     elements & feature detects
   {% endcomment %}
-  <script src="{{ site.url }}/js/libs/modernizr-1.7.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.4/modernizr.min.js"></script>
 </head>
 <body>
   <div id="container">
@@ -65,6 +63,7 @@
   <script>
   window.jQuery || document.write("<script src='{{ site.url }}/js/libs/jquery-1.5.1.min.js'>\x3C/script>")
   </script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
   {% comment %}
     scripts concatenated and minified via ant build script
   {% endcomment %}
