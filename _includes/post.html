@@ -30,9 +30,9 @@
     {% endif %}
     </div>
   </header>
-  <section itemprop="articleBody">
+  <div itemprop="articleBody">
   {% if content %}{{ content }}{% else %}{{ page.content }}{% endif %}
-  </section>
+  </div>
   {% if site.related_posts %}
   <h2 id="related_posts">Related Posts</h2>
   <ol>
