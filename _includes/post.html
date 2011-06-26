@@ -1,23 +1,26 @@
-<article class="post">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    <h1><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></h1>
+    <h1 itemprop="name"><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></h1>
     <div class="posted">posted
     {% if page.date %}
     <time pubdate="pubdate" datetime="{{ page.date | date_to_xmlschema }}">
+      <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">
       {{ page.date | date_to_long_string }}
     </time>
     {% endif %}
     {% if page.author %}
     by
+    <span itemprop="author">
     {% if page.author_url %}
-    <a href="{{ page.author_url }}" rel="author" class="author">{{ page.author }}</a>
+      <a href="{{ page.author_url }}" rel="author">{{ page.author }}</a>
     {% else %}
-    <span class="author">{{ page.author }}</span>
+      {{ page.author }}
     {% endif %}
+    <span>
     {% endif %}
     {% if page.categories and page.categories[0] %}
     in
-    <span class="categories">
+    <span class="categories" itemprop="articleSection">
       {% for category in page.categories %}
       {% capture previous_category %}{{ previous_category }}/{{ category }}{% endcapture %}
       {% unless forloop.first %}:{% endunless %}
@@ -27,7 +30,9 @@
     {% endif %}
     </div>
   </header>
+  <section itemprop="articleBody">
   {% if content %}{{ content }}{% else %}{{ page.content }}{% endif %}
+  </section>
   {% if site.related_posts %}
   <h2 id="related_posts">Related Posts</h2>
   <ol>
