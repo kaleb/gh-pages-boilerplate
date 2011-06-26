@@ -4,7 +4,7 @@
     <div class="posted">posted
     {% if page.date %}
     <time pubdate="pubdate" datetime="{{ page.date | date_to_xmlschema }}">
-      <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">
+      <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}" />
       {{ page.date | date_to_long_string }}
     </time>
     {% endif %}
