@@ -1,6 +1,9 @@
 ---
-layout: default
+layout: body
 ---
+<div id="container">
+  <header id="site_header">{% include site-header.html %}</header>
+  <section id="main" role="main">
 <div id="wiki-content">
 <h1>Wiki</h1>
 Loading...
@@ -10,7 +13,10 @@ It looks like you don't have JavaScript enabled. You can view the
 <a href="https://github.com/{{ site.author.gh.user }}/{{ site.author.gh.repo }}/wiki">
 {{ site.title }} wiki on GitHub</a> instead.
 </div>
-{% capture page.scripts %}aaa
+  </section>
+  <footer id="site_footer" class="clearfix">{% include site-footer.html %}</footer>
+</div>
+{% include scripts.html %}
 <script src="https://github.com/coreyti/showdown/raw/master/compressed/showdown.js"></script>
 <script src="http://github.com/cowboy/jquery-bbq/raw/v1.2.1/jquery.ba-bbq.min.js"></script>
 <script>
@@ -60,4 +66,3 @@ $(function() {
     $(window).trigger('hashchange');
 });
 </script>
-{% endcapture %}
