@@ -2,9 +2,6 @@
 {% include text.css %}
 #main {
 	background: white;
-{% comment %}
-The following is a hack that fixes an issue when the last element insid #main is a <p>. I am not sure why this hack works.
-{% endcomment %}
 	padding-bottom: 0.5px;
 }
 #site_header hgroup, #site_footer, body {
@@ -59,4 +56,7 @@ footer.pagination .next {
 }
 .ui-button .ui-icon-tweet {
 	background-image: url(http://si0.twimg.com/images/dev/cms/intents/bird/bird_gray/bird_16_gray.png) !important;
+}
+#SE-img {
+	float:left;
 }
