@@ -26,7 +26,7 @@ comes with <a href="http://jquery.org">jQuery</a> and
 </section>
 <footer class="pagination">
 {% if paginator.previous_page == 1 %}
-  <a href="{{ site.url }}/blog" rel="prev start" class="previous">Newer</a>
+  <a href="{{ site.url }}" rel="prev start" class="previous">Newer</a>
 {% elsif paginator.previous_page %}
   <a href="{{ site.url }}/page{{paginator.previous_page}}" rel="prev" class="previous">Newer</a>
 {% else %}
